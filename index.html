@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BODEGUERO</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+  <body>
+    <section>
+        <section id="bodegaForm_inicial">   
+        <h5>CANTIDAD INICIAL DE BILLETES</h5>
+        <input type="text" id ="bodegaForm_inInicial10" placeholder="Billetes de 10$"></input>
+        <input type="text" id ="bodegaForm_inInicial20" placeholder="Billetes de 20$"></input>
+        <input type="text" id ="bodegaForm_inInicial50" placeholder="Billetes de 50$"></input>
+        <button id="bodegaForm_btAceptar">Aceptar</button>
+        </section>
+
+    <section id="bodegaForm">
+        <h3>BODEGUERO</h3>
+        <table id="bodegaForm_tabla">
+            <tr>
+                <th>Cedula</th>
+                <th>Denominación</th>
+                <th>Cantidad</th>
+                <th>Monto Cuenta</th>
+                <th>Sexo</th>
+            </tr>
+        </table>
+        <h5>Monto final de billetes de 10$: $<span id="bodegaForm_lblMontoFinal10">?</span></h5>
+        <h5>Monto final de billetes de 20$: $<span id="bodegaForm_lblMontoFinal20">?</span></h5>
+        <h5>Monto final de billetes de 50$: $<span id="bodegaForm_lblMontoFinal50">?</span></h5>
+        <h5>Monto final de billetes de la jornada: $<span id="bodegaForm_lblMontoJornada">?</span></h5>
+        <h5>Porcentaje de incremento de los billetes de 50$: %<span id="bodegaForm_lblPorcentaje50">?</span></h5>
+        <h5>Porcentaje de incremento de los billetes de 20$: %<span id="bodegaForm_lblPorcentaje20">?</span></h5>
+        <h5>Al bodeguero le queda un monto total de $<span id="bodegaForm_lblMontoFinalTotal">?</span></h5>
+        <button id="bodegaForm_btAgregar">Agregar cliente</button>
+    </section>
+
+    <section id="clienteForm">
+        <h3>Datos del cliente</h3>
+        <input type="text" id="clienteForm_inCedula" placeholder="Cedula"></input>
+        <input type="text" id="clienteForm_inTipo" placeholder="Denominación"></input>
+        <input type="text" id="clienteForm_inCantidad" placeholder="Cantidad"></input>
+        <input type="text" id="clienteForm_inSexo" placeholder="Sexo"></input>
+        <button id="clienteForm_btAceptar">Aceptar</button>
+    </section>
+</body>
+    <script type="module">
+        import Cl_controlador from "./js/Cl_controlador.js";
+            new Cl_controlador()
+        </script>
+        </html>
